@@ -1,7 +1,5 @@
 [
     {
-        "_id": "635a0c0b64a6d231228942ae",
-        "service_id": "04",
         "title": "Wedding Photography",
         "img": "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "price": "1000",
@@ -9,8 +7,6 @@
       
     },
     {
-        "_id": "635a0c0b64a6d231228942af",
-        "service_id": "05",
         "title": "Model Photography",
         "img": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "price": "500",
@@ -18,8 +14,6 @@
       
     },
     {
-        "_id": "635b591a1dafe382a9da8c96",
-        "service_id": "01",
         "title": "Product Photography",
         "img": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1399&q=80",
         "price": "200.00",
@@ -27,8 +21,6 @@
       
     },
     {
-        "_id": "635b5afc1dafe382a9da8c98",
-        "service_id": "02",
         "title": "Travel Photography",
         "img": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80",
         "price": "150.00",
@@ -36,8 +28,6 @@
       
     },
     {
-        "_id": "635b5b691dafe382a9da8c99",
-        "service_id": "03",
         "title": "Event Photography",
         "img": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
         "price": "30.00",
@@ -45,8 +35,6 @@
       
     },
     {
-        "_id": "635b5ba51dafe382a9da8c9a",
-        "service_id": "06",
         "title": "Videography",
         "img": "https://images.unsplash.com/photo-1625690303837-654c9666d2d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "price": "20.00",

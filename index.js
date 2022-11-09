@@ -1,5 +1,5 @@
 const express = require("express");
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express();
 const cors = require("cors");
 const port = process.env.PORT || 5000;
@@ -30,7 +30,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         const userCollection = client.db('ChitroGolpor').collection('services');
-
+        const reviewCollection = client.db("ChitroGolpor").collection("userreviews");
         app.get('/services', async (req, res) => {
             const query = {};
             const cursor = userCollection.find(query);
@@ -46,6 +46,31 @@ async function run() {
             res.send(services);
         });
 
+        app.get("/services/:id", async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: ObjectId(id) };
+            const cursor = await userCollection.find(query);
+            const services = await cursor.toArray();
+            res.send(services);
+        });
+
+        app.post("/services", async (req, res) => {
+            const review = req.body;
+            const result = await userCollection.insertOne(review);
+            res.send(result);
+        });
+        app.post("/reviews", async (req, res) => {
+            const review = req.body;
+            const result = await reviewCollection.insertOne(review);
+            res.send(result);
+        });
+
+        app.get("/reviews", async (req, res) => {
+            const query = {};
+            const cursor = await reviewCollection.find(query);
+            const reviews = await cursor.toArray();
+            res.send(reviews);
+        });
     }
     finally {
 
@@ -55,23 +80,8 @@ async function run() {
 run().catch(err => console.log(err));
 
 
-// app.get("/service/:id", (req, res) => {
-//     const id = req.params.id;
-//     console.log(id);
-//     const catagoryService = courses.find((item) => item._id == id);
-//     // console.log(catagory_news);
-//     res.send(catagoryService);
-// });
 
 
-// app.get("/service/:id", (req, res) => {
-//     const id = req.params.id;
-//     // console.log(id);
-//     console.log(courses);
-//     const selectedService = courses.find((item) => item._id == id);
-//     console.log(selectedService);
-//     res.send(selectedService);
-// });
 
 // Initial message
 app.get("/", (req, res) => {

@@ -9,8 +9,6 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
-//Course Data
-
 
 
 

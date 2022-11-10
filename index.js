@@ -14,7 +14,6 @@ app.use(express.json());
 
 // API Loading
 // app.get("/services", (req, res) => {
-//     res.send(courses);
 
 
 

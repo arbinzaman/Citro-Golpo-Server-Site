@@ -10,14 +10,8 @@ app.use(cors());
 app.use(express.json());
 
 //Course Data
-// const courses = require("./services.json");
-
-// API Loading
-// app.get("/services", (req, res) => {
 
 
-
-// mongodb
 
 
 
